@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Intro section with dropdown navigation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/loader.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/tablet_desktop.css">
+</head>
+
+<body>
+  <!-- <div class="loader-container">
+    <p id="percentage-loader"></p>
+    <div class="loader1"></div>
+  </div> -->
+  <main>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img id="logo" src="./images/logo.svg" alt="logo" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-start flex-grow-1" id="nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Features</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <img class="align-self-center" src="./images/icon-todo.svg" alt="icon-todo">
+                      <a class="dropdown-item" href="#">Todo list</a>
+                    </li>
+                    <li>
+                      <img class="align-self-center" src="./images/icon-calendar.svg" alt="icon-calendar">
+                      <a class="dropdown-item" href="#">Calendar</a>
+                    </li>
+                    <li>
+                      <img class="align-self-center" src="./images/icon-reminders.svg" alt="icon-reminders">
+                      <a class="dropdown-item" href="#">Reminders</a>
+                    </li>
+                    <li>
+                      <img class="align-self-center" src="./images/icon-planning.svg" alt="icon-planning">
+                      <a class="dropdown-item" href="#">Planning</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Company</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">History</a></li>
+                    <li><a class="dropdown-item" href="#">Our Team</a></li>
+                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Careers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              </ul>
+
+              <div class="d-flex flex-column align-items-center gap-3 d-md-flex flex-md-row gap-md-3 menu-right">
+                <a class="nav-link" href="#">Login</a>
+                <a class="nav-link btn" href="#">Register</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main-container">
+      <img class="hero-m" src="./images/image-hero-mobile.png" alt="image-hero-m">
+      <img class="hero-d" src="./images/image-hero-desktop.png" alt="image-hero-d">
+      <div class="main-details">
+        <h1>Make<br>remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.</p>
+        <button type="button" class="btn" id="learn-more-btn">Learn more</button>
+        <div class="client-icons">
+          <img class="client-icon" id="databiz-icon" src="./images/client-databiz.svg" alt="databiz-logo">
+          <img class="client-icon" id="audiophile-icon" src="./images/client-audiophile.svg" alt="audiophile-logo">
+          <img class="client-icon" id="meet-icon" src="./images/client-meet.svg" alt="meet-logo">
+          <img class="client-icon" id="maker-icon" src="./images/client-maker.svg" alt="maker-logo">
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+  <script src="./loader.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
+
+<!-- 
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+  Coded by <a href="#">Jo Young</a>.
+</div> -->

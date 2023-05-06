@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Plus+Jakarta+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --almost-white: hsl(0, 0%, 98%);
+    --medium-gray: hsl(0, 0%, 41%);
+    --almost-black: hsl(0, 0%, 8%);
+    --purple: hsl(277, 42%, 51%);
+    --violet: hsl(243, 79%, 68%);
+    --turquoise: hsl(197, 66%, 57%);
+    --yellow: hsl(50, 100%, 83%);
+}
+
+html {
+    --r1440: calc((1440 / var(--base) * 1rem));
+    --r150: calc((150 / var(--base) * 1rem));
+    --r108: calc((108 / var(--base) * 1rem));
+    --r84: calc((84 / var(--base) * 1rem));
+    --r50: calc((50 / var(--base) * 1rem));
+    --r42: calc((42 / var(--base) * 1rem));
+    --r36: calc((36 / var(--base) * 1rem));
+    --r28: calc((28 / var(--base) * 1rem));
+    --r26: calc((26 / var(--base) * 1rem));
+    --r20: calc((20 / var(--base) * 1rem));
+    --r18: calc((18 / var(--base) * 1rem));
+    --r14: calc((14 / var(--base) * 1rem));
+    --r12: calc((12 / var(--base) * 1rem));
+    --r10: calc((10 / var(--base) * 1rem));
+    --base: 16;
+}
+
+/* --------------- Overall structure ---------------- */
+body, main {
+    display: grid;
+    place-items: center;
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    padding: 0.5rem;
+}
+
+main {
+    background-image: url(../images/mesh-gradient2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+header {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+/* ----------- Bootstrap navbar and toggle ------------ */
+/* ------- overriding bootstrap default values -------- */
+
+nav .container-fluid {
+    padding: 0;
+    margin: 0 2rem;
+}
+
+.navbar-brand {
+    margin-right: 2.5rem;
+    margin-top: 0.5rem;
+    padding: 0;
+}
+
+#logo,
+.navbar-toggler {
+    filter: invert(100%) brightness(150%);
+}
+
+#logo {
+    padding: 0;
+    width: 6rem;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.offcanvas {
+    background-image: url(../images/mesh-gradient2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.offcanvas.offcanvas-end {
+    width: 65%;
+}
+
+.offcanvas-header,
+.offcanvas-body {
+    padding: 1.5rem 1.5rem 1.5rem 1rem;
+}
+
+.offcanvas-header .btn-close {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem 1.5rem;
+}
+
+.nav-link {
+    color: var(--almost-white);
+    padding: 1rem 2rem;
+}
+
+.nav-link:hover,
+.navbar-nav .nav-link.show {
+    color: var(--violet);
+}
+
+.dropdown-menu {
+    background-color: hsla(0, 0%, 98%, 0.95);
+    border: 1px solid var(--almost-white);
+    width: 10rem;
+    margin-left: 2rem;
+    box-shadow: 0 0 10px hsl(0, 0%, 41%);
+}
+
+.dropdown-menu li{ 
+    display: grid;
+    place-items: center;
+    grid-template-columns: var(--r20) 1fr;
+    gap: 2px;
+    padding-left: 1rem;
+}
+
+.dropdown-item { 
+    color: var(--medium-gray);
+    font-size: 1rem;
+    padding: 0.5rem 0 0.5rem var(--r14);
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+    color: var(--purple);
+}
+
+.btn {
+    border: 2px solid var(--almost-white);
+    border-radius: var(--r14);
+    padding: 0.8rem 1.8rem 0.6rem 2rem;
+    transition: all 0.4s ease-in;
+}
+
+.btn:hover {
+    background: -webkit-linear-gradient(45deg, var(--purple) 0%, var(--violet) 50%);
+    border: none;
+    color: var(--almost-white);
+}
+
+/* ----------------- Main container ---------------- */
+.main-container {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.hero-m {
+    display: block;
+    margin-bottom: var(--r84);
+    width: 100%;
+}
+
+.hero-d {
+    display: none;
+}
+
+.main-details h1 {
+    background: -webkit-linear-gradient(45deg, var(--purple) 0%, var(--violet) 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: -0.5px;
+    margin-bottom: 1rem;
+}
+
+.main-details p {
+    color: var(--purple);
+    font-size: 1rem;
+    line-height: var(--r26);
+    margin-bottom: 1.5rem;
+}
+
+.main-details .btn {
+    background: -webkit-linear-gradient(45deg, var(--purple) 0%, var(--violet) 75%);
+    border: none;
+    border-radius: var(--r14);
+    color: var(--almost-white);
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: inherit;
+    line-height: var(--r26);
+    letter-spacing: -0.26px;
+    padding: var(--r12) 1.5rem var(--r10) 1.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.3s ease;
+}
+
+.main-details .btn:hover {
+    outline: 2px solid var(--purple);
+    outline-offset: 3px;
+    scale: 0.9;
+}
+
+.client-icons {
+    filter: invert(55%) sepia(58%) saturate(6167%) hue-rotate(249deg) brightness(77%) contrast(81%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+#databiz-icon,
+#meet-icon {
+    height: var(--r14);
+}
+
+#audiophile-icon {
+    height: var(--r26);
+}
+
+#maker-icon {
+    height: var(--r18);
+}
+
+/* .attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+} */
