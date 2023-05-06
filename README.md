@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Jo-cloud85/intro-section-with-dropdown.git](https://github.com/Jo-cloud85/intro-section-with-dropdown.git)
+- Live Site URL: [https://jo-cloud85.github.io/intro-section-with-dropdown/](https://jo-cloud85.github.io/intro-section-with-dropdown/)
 
 ## My process
 
