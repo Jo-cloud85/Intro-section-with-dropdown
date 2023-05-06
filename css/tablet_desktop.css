@@ -160,12 +160,12 @@
 
     .hero-d {
         display: block;
-        height: 47rem;
+        height: 45rem;
     }
 
     .main-details {
         box-sizing: border-box;
-        padding: 0 10rem 0 2rem;
+        padding: 0 9rem 0 2rem;
     }
 
     .main-details h1 {
