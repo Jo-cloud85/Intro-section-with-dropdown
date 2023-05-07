@@ -18,6 +18,9 @@
 
 html {
     --r1440: calc((1440 / var(--base) * 1rem));
+    --r220: calc((220 / var(--base) * 1rem));
+    --r200: calc((200 / var(--base) * 1rem));
+    --r180: calc((180 / var(--base) * 1rem));
     --r150: calc((150 / var(--base) * 1rem));
     --r108: calc((108 / var(--base) * 1rem));
     --r84: calc((84 / var(--base) * 1rem));
@@ -45,7 +48,6 @@ body {
     box-sizing: border-box;
     font-family: 'Epilogue', sans-serif;
     height: 100vh;
-    width: 100vw;
     padding: 0.5rem;
 }
 
@@ -63,21 +65,14 @@ main {
 
 header {
     width: 100%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 /* ----------- Bootstrap navbar and toggle ------------ */
 /* ------- overriding bootstrap default values -------- */
-
 nav .container-fluid {
     padding: 0;
-    margin: 0 2rem;
-}
-
-.navbar-brand {
-    margin-right: 2.5rem;
-    margin-top: 0.5rem;
-    padding: 0;
+    margin: 0;
 }
 
 #logo,
@@ -86,12 +81,13 @@ nav .container-fluid {
 }
 
 #logo {
-    padding: 0;
-    width: 6rem;
+    padding-left: 0.5rem;
+    width: 5.5rem;
 }
 
 .navbar-toggler {
-    border: none;
+    border: 2px solid;
+    margin-top: -0.5rem;
 }
 
 .offcanvas {
@@ -121,7 +117,7 @@ nav .container-fluid {
 }
 
 .nav-link {
-    color: var(--almost-white);
+    color: var(--purple);
     padding: 1rem 2rem;
 }
 
@@ -131,8 +127,8 @@ nav .container-fluid {
 }
 
 .dropdown-menu {
-    background-color: hsla(0, 0%, 98%, 0.95);
-    border: 1px solid var(--almost-white);
+    background-color: hsl(217, 100%, 92%);
+    border: none;
     width: 10rem;
     margin-left: 2rem;
     box-shadow: 0 0 10px hsl(0, 0%, 41%);
@@ -157,14 +153,14 @@ nav .container-fluid {
     color: var(--purple);
 }
 
-.btn {
+.nav-link.btn {
     border: 2px solid var(--almost-white);
     border-radius: var(--r14);
     padding: 0.8rem 1.8rem 0.6rem 2rem;
     transition: all 0.4s ease-in;
 }
 
-.btn:hover {
+.nav-link.btn:hover {
     background: -webkit-linear-gradient(45deg, var(--purple) 0%, var(--violet) 50%);
     border: 2px solid transparent;
     color: var(--almost-white);
@@ -176,23 +172,39 @@ nav .container-fluid {
     text-align: center;
 }
 
-.hero-m {
-    display: block;
-    margin-bottom: var(--r84);
-    width: 100%;
+.hero-img-container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.hero-grp-1,
+.hero-grp-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .hero-d {
-    display: none;
+    border-radius: 1rem;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+#hero-5 {
+    visibility: hidden;
 }
 
 .main-details h1 {
     background: -webkit-linear-gradient(45deg, var(--purple) 0%, var(--violet) 75%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
-    line-height: 3rem;
+    line-height: 3.5rem;
     letter-spacing: -0.5px;
     margin-bottom: 1rem;
 }
@@ -201,6 +213,7 @@ nav .container-fluid {
     color: var(--purple);
     font-size: 1rem;
     line-height: var(--r26);
+    padding: 0 1rem;
     margin-bottom: 1.5rem;
 }
 

@@ -1,34 +1,107 @@
-@media screen and (min-width: 601px) and (max-width: 1000px) {
+@media screen and (min-width: 599px) and (max-width: 999px) {
     body {
-        height: 100vh;
         padding: 1rem;
     }
 
     main {
         padding: 1.5rem;
     }
+    /* ----------- Bootstrap navbar and toggle ------------ */
+    /* ------- overriding bootstrap default values -------- */
+    #logo {
+        padding-left: 0.5rem;
+        width: 6.5rem;
+    }
 
-    .hero-m {
-        margin-bottom: var(--r108);
+    .navbar-toggler-icon {
+        width: 2rem;
+    }
+
+    .navbar-toggler {
+        border: 2px solid;
+        margin-top: -0.5rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .offcanvas-header,
+    .offcanvas-body {
+        padding: 2rem 2.5rem 2rem 1.5rem;
+    }
+
+    .offcanvas-header .btn-close {
+        width: 3em;
+        height: 3rem;
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+        padding: 1.5rem 2.5rem;
+    }
+
+    img .align-self-center {
+        width: 1.5rem;
+    }
+
+    .dropdown-menu {
+        width: 15rem;
+        margin-left: 2.5rem;
+        box-shadow: 0 0 15px hsl(0, 0%, 41%);
+    }
+
+    .dropdown-menu li{ 
+        grid-template-columns: auto 1fr;
+        padding-left: 1.5rem;
+    }
+
+    .dropdown-item { 
+        font-size: 1.5rem;
+        padding: var(--r12) 0 var(--r12) 1.5rem;
+    }
+
+    /* ------------------ Main container ----------------- */
+    .hero-img-container {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+        margin: 2rem 0 4rem 0;
+    }
+
+    .hero-grp-1,
+    .hero-grp-2 {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .hero-d {
+        border-radius: 1.5rem;
+        width: var(--r180);
+        object-fit: cover;
+    }
+
+    #hero-5 {
+        visibility: visible;
     }
 
     .main-details h1 {
-        font-size: 4rem;
-        line-height: 5rem;
+        font-size: 3.5rem;
+        line-height: 4rem;
         letter-spacing: 0;
         margin-bottom: 1.5rem;
     }
     
     .main-details p {
-        font-size: 1.5rem;
-        line-height: 2.5rem;
-        padding: 0 3rem;
+        font-size: var(--r18);
+        line-height: 2rem;
+        padding: 0 2rem;
         margin-bottom: 3rem;
     }
 
     .main-details .btn {
-        font-size: 1.5rem;
-        line-height: 2.5rem;
+        font-size: var(--r18);
+        line-height: 2rem;
         letter-spacing: 0;
         padding: 1rem 2.5rem var(--r14) 2.5rem;
         margin-bottom: 4rem;
@@ -36,51 +109,67 @@
 
     #databiz-icon,
     #meet-icon {
-        height: 1.5rem;
+        height: 1rem;
     }
 
     #audiophile-icon {
-        height: 2.5rem;
+        height: 2rem;
     }
 
     #maker-icon {
-        height: 2rem;
+        height: 1.5rem;
     }
 }
 
-@media screen and (min-width: 1001px) and (max-width: 1280px) {
+@media screen and (min-width: 1000px) and (max-width: 1279px) {
     body {
-        height: 100vh;
         padding: 1rem;
     }
 
     main {
         border-radius: 2rem;
-        
     }
 
-    header { /*Refer to navbar.css for navbar styles*/
+    header {
         height: auto;
         margin-bottom: 0;
     }
 
+    /* ----------- Bootstrap navbar and toggle ------------ */
+    nav .container-fluid {
+        margin: 1rem;
+    }
+
+    #logo {
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+        width: 6.5rem;
+    }
+
+    /* ------------------ Main container ------------------- */
     .main-container {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
-        padding: 1.5rem 5rem;
+        padding: 0 5rem;
         text-align: left;
         width: 100%;
     }
 
-    .hero-m {
-        display: none;
+    .hero-img-container {
+        gap: 1.5rem;
+        margin-top: 0;
     }
 
     .hero-d {
-        display: block;
-        height: 34rem;
+        border-radius: 1.5rem;
+        width: var(--r220);
+        object-fit: cover;
+    }
+
+    #hero-5 {
+        visibility: visible;
     }
 
     .main-details {
@@ -89,8 +178,8 @@
     }
 
     .main-details h1 {
-        font-size: 4rem;
-        line-height: 4rem;
+        font-size: 4.5rem;
+        line-height: 4.5rem;
         letter-spacing: -1.11px;
         margin-bottom: 1.5rem;
     }
@@ -99,6 +188,7 @@
         font-size: 1rem;
         line-height: 1.5rem;
         margin-bottom: 2.5rem;
+        padding: 0;
     }
 
     .main-details .btn {
@@ -113,25 +203,10 @@
         justify-content: space-between;
         margin-bottom: 0;
     }
-
-    #databiz-icon,
-    #meet-icon {
-        height: var(--r18);
-    }
-
-    #audiophile-icon {
-        height: 2rem;
-    }
-
-    #maker-icon {
-        height: var(--r20);
-    }
 }
 
-
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1280px) {
     body {
-        height: 100vh;
         padding: 1rem;
     }
 
@@ -139,33 +214,67 @@
         border-radius: 2rem;
     }
 
-    header { /*Refer to navbar.css for navbar styles*/
-        height: auto;
+    header {
         margin-bottom: 0;
     }
 
+    /* ----------- Bootstrap navbar and toggle ------------ */
+    nav .container-fluid {
+        padding: 0;
+        margin: 0 1rem;
+    }
+
+    #logo {
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+        width: 7rem;
+    }
+
+    /* ------------------ Main container ------------------- */
     .main-container {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
-        padding: 1.5rem calc((100vw - var(--r1440)) / 2);
+        padding: 0 calc((100vw - var(--r1440)) / 2);
         text-align: left;
-        width: 100%;
     }
 
-    .hero-m {
-        display: none;
+    .hero-img-container {
+        flex: 1;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-top: 0;
+    }
+
+    .hero-grp-1,
+    .hero-grp-2 {
+        gap: 1rem;
+    }
+
+    .hero-grp-1 {
+        justify-self: last baseline;
+    }
+
+    .hero-grp-2 {
+        justify-self: baseline;
     }
 
     .hero-d {
+        border-radius: 1.5rem;
         display: block;
-        height: 45rem;
+        width: 15rem;
+        object-fit: cover;
+    }
+
+    #hero-5 {
+        visibility: visible;
     }
 
     .main-details {
+        flex: 1;
         box-sizing: border-box;
-        padding: 0 9rem 0 2rem;
+        padding: 0 4rem;
     }
 
     .main-details h1 {
@@ -179,6 +288,7 @@
         font-size: var(--r18);
         line-height: var(--r26);
         margin-bottom: var(--r50);
+        padding: 0;
     }
 
     .main-details .btn {
