@@ -77,7 +77,7 @@ nav .container-fluid {
 
 #logo,
 .navbar-toggler {
-    filter: invert(100%) brightness(150%);
+    filter: invert(40%) sepia(58%) saturate(6167%) hue-rotate(249deg) brightness(77%) contrast(81%);
 }
 
 #logo {
