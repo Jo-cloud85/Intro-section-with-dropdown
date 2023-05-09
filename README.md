@@ -30,7 +30,6 @@ Users should be able to:
 ### Screenshot
 
 - Main: ![./images/main.png](./images/main.png)
-- 
 
 ### Links
 
