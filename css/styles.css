@@ -12,6 +12,8 @@
     --almost-black: hsl(0, 0%, 8%);
     --purple: hsl(277, 42%, 51%);
     --violet: hsl(243, 79%, 68%);
+    --light-violet: hsl(277, 33%, 73%);
+    --dark-violet: hsl(252, 23%, 17%);
     --turquoise: hsl(197, 66%, 57%);
     --yellow: hsl(50, 100%, 83%);
 }
@@ -63,7 +65,7 @@ main {
     padding: 1rem;
 }
 
-header {
+nav {
     width: 100%;
     margin-bottom: 1rem;
 }
