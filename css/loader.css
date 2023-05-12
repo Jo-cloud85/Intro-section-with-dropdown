@@ -1,8 +1,9 @@
 .loader-container {
     background-color: var(--dark-violet);
     height: 100vh;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all 1s ease;
     position: fixed;
     left: 0;
